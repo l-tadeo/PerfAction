@@ -10,6 +10,7 @@ curl -L http://search.maven.org/remotecontent?filepath=kg/apc/cmdrunner/${JMETER
 # Download Plugin Manager
 echo "Downloading Plugin Manager"
 curl -L https://jmeter-plugins.org/get/ --output ${JMETER_HOME}/lib/ext/jmeter-plugins-manager-${JMETER_PLUGIN_MANAGER_VERSION}.jar
+curl -L https://repo1.maven.org/maven2/net/luminis/jmeter/jmeter-websocket-samplers/1.2.10/jmeter-websocket-samplers-1.2.10.jar --output ${JMETER_HOME}/lib/ext/jmeter-websocket-samplers-1.2.10.jar
 
 # Install Plugin Manager
 java -cp /opt/apache/apache-jmeter-${JMETER_VERSION}/lib/ext/jmeter-plugins-manager-${JMETER_PLUGIN_MANAGER_VERSION}.jar org.jmeterplugins.repository.PluginManagerCMDInstaller
